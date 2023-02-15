@@ -6,11 +6,11 @@ public class Pizza {
     private Boolean isVeg;
     private String bill;
 
-    private Boolean isExtraCheeseAdded=false;
-    private Boolean isExtraToppingsAdded=false;
-    private Boolean isBillCreated=false;
+    private Boolean isExtraCheeseAdded;
+    private Boolean isExtraToppingsAdded;
+    private Boolean isBillCreated;
     private int toppings;
-    private Boolean isTakeaway=false;
+    private Boolean isTakeaway;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -24,6 +24,10 @@ public class Pizza {
             this.toppings=120;
             this.bill="Base Price Of The Pizza: 400"+"\n";
         }
+        this.isExtraCheeseAdded=false;
+        this.isBillCreated=false;
+        this.isTakeaway=false;
+        this.isExtraToppingsAdded=false;
     }
 
     public int getPrice(){
